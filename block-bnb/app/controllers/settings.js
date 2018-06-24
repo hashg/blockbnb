@@ -3,7 +3,7 @@ import Controller from '@ember/controller';
 import config from '../config/environment';
 
 export default Controller.extend({
-  serverName : config.APP.servername,
-  serverPort : config.APP.serverport,
-  serverAPI : config.APP.serverAPI
+  serverName : config.APP.blockservername,
+  serverPort : config.APP.blockserverport,
+  serverAPI : config.APP.blockserverAPI
 });

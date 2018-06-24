@@ -1,0 +1,21 @@
+<form class="input-group">
+  <div class="input-row">
+    <label>User Name</label>
+    {{input type="text" placeholder="siebel.us.oracle.com" value="Nick"}}
+  </div>
+  <div class="table-view-divider">Wallet</div>
+  <div class="input-row">
+    <label>Balance</label>
+    {{input type="text" placeholder="80" value=balance}}
+  </div>
+  <div class="input-row">
+    <label>Withheld</label>
+    {{input type="text" placeholder="80" value=withheld}}
+  </div>
+  <div class="table-view-divider">Invoices</div>
+  <div class="input-row">
+    <label>Rental</label>
+    {{input type="text" placeholder="80" value=transaction}}
+  </div>
+</form>
+{{outlet}}

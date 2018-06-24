@@ -30,9 +30,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
 
-    ENV.APP.blockservername = 'http://localhost';
-    ENV.APP.blockserverport = '5000';
-    ENV.APP.blockserverAPI  = 'api/relay';
+    http://192.168.1.113:5040/checkIn
+
+    ENV.APP.blockservername = 'http://192.168.1.113';
+    ENV.APP.blockserverport = '5040';
+    ENV.APP.blockserverAPI  = '/';
 
     ENV.APP.iotservername = 'http://raspberrypi.mshome.net';
     ENV.APP.iotserverport = '80';

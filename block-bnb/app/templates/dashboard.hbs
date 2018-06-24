@@ -1,3 +1,5 @@
+{{#if enabled}} 
+
 <ul class="table-view">
   <li class="table-view-cell">
     Main Light
@@ -19,6 +21,14 @@
   </li>
 </ul>
 <div class="card">
-<button class="btn btn-negative btn-block">Check Out</button>
+<button class="btn btn-negative btn-block" {{action 'checkout'}}>Check Out</button>
 </div>
+{{else}}
+<ul class="table-view">
+  <li class="table-view-cell">
+    Access Denied
+    
+  </li>
+</ul>
+{{/if}}
 {{outlet}}

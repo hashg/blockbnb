@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('explore');
   this.route('dashboard');
   this.route('settings');
+  this.route('profile');
 });
 
 export default Router;
