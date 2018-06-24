@@ -1,0 +1,27 @@
+{{!-- The following component displays Ember's default welcome message. --}}
+<header class="bar bar-nav">
+  <h1 class="title">Block BnB</h1>
+</header>
+
+<div class="bar bar-footer">
+  <nav class="bar bar-tab">
+    {{#link-to 'explore' class="tab-item"}}
+      <span class="icon icon-code"></span>
+      <span class="tab-label">Explore</span>
+    {{/link-to}}
+
+    {{#link-to 'dashboard' class="tab-item"}}
+      <span class="icon icon-star"></span>
+      <span class="tab-label">Dashboard</span>
+    {{/link-to}}
+
+    {{#link-to 'settings' class="tab-item"}}
+      <span class="icon icon-gear"></span>
+      <span class="tab-label">Settings</span>
+    {{/link-to}}
+  </nav>
+</div>
+
+<div class="content">
+	{{outlet}}
+</div><!-- /.content -->
